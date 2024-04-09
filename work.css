@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: "Reddit Mono", monospace;
+    --orange-text: rgb(252, 62, 4);
+    --gray-text: rgb(86, 85, 85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2.5rem;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+main {
+    height: 700px;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    background-image: url(../Portofolio_LaraKempf/pictures/IMG_8204.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    filter: grayscale(0.9)opacity(0.5);
+
+    z-index: 0;
+
+}
+
+header {
+    z-index: 1;
+
+    position: sticky;
+    top: 1rem;
+
+    height: 5rem;
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.634);
+    -webkit-box-shadow: 0px 7px 22px -17px #FFFFFF;
+    box-shadow: 0px 7px 22px -17px #FFFFFF;
+
+
+
+}
+
+header nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(86, 85, 85);
+    font-weight: 500;
+
+
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (min-width:720px) {
+    body {
+        padding: 8rem;
+        padding-top: 2rem;
+    }
+
+    /* main {
+        margin-bottom: 200px;
+    } */
+
+
+    header {
+        /* margin: 0; */
+        /* border: 1px solid white; */
+    }
+
+    .description h2 {
+        align-self: center;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        align-self: center;
+
+    }
+
+    .description p {
+        margin: 0 auto;
+    }
+}
+
+
+.description {
+
+    width: 90%;
+    height: 500px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    filter: brightness(2);
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    padding: 10px;
+
+}
+
+.description h2 {
+    font-size: 2rem;
+}
+
+.description p {
+    font-size: 1.8rem;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 10px;
+    /* box-sizing: content-box; */
+
+    /* clip-path: polygon(0% 29%, 99% 30%, 100% 70%, 0% 66%); */
+    /* overflow: auto; */
+
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    background-color: rgba(173, 216, 230, 0.256);
+}
+
+.description a img {
+    width: 200px;
+    border-radius: 2rem;
+
+}
+
+.description a {
+
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+
+}
+
+.description a:hover {
+    transform: scale(1.1);
+}

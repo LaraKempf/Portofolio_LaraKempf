@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: "Reddit Mono", monospace;
+    --orange-text: rgb(252, 62, 4);
+    --gray-text: rgb(86, 85, 85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2.5rem;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+main {
+    height: 700px;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    background-image: url(../Portofolio_LaraKempf/pictures/IMG_8204.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    filter: grayscale(0.4);
+    z-index: 0;
+
+}
+
+header {
+    z-index: 1;
+
+    position: sticky;
+    top: 1rem;
+
+    height: 5rem;
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.634);
+    -webkit-box-shadow: 0px 7px 22px -17px #FFFFFF;
+    box-shadow: 0px 7px 22px -17px #FFFFFF;
+
+
+
+}
+
+header nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(86, 85, 85);
+    font-weight: 500;
+
+
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 2rem;
+
+}
+
+.intro h1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    margin: 20rem auto;
+    /* border: 1px solid black; */
+
+}
+
+.intro h1 span {
+    color: rgb(252, 62, 4);
+    align-self: flex-start;
+    letter-spacing: -0.5rem;
+}
+
+.intro p {
+    display: block;
+    -webkit-box-shadow: inset 0px 7px 22px 3px #FFFFFF;
+    box-shadow: inset 0px 7px 22px 3px #FFFFFF;
+    color: rgb(254, 243, 243);
+    font-size: 2rem;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.488);
+
+}
+
+button {
+    width: 80px;
+    margin: 0 auto;
+    position: fixed;
+    left: 80%;
+    bottom: 100px;
+    height: 3rem;
+    background: rgba(245, 222, 179, 0.351);
+    font-size: 2.5rem;
+    font-weight: 500;
+    border: none;
+    color: rgba(93, 5, 5, 0.529);
+    -webkit-box-shadow: inset 0px 7px 22px 3px #000000;
+    box-shadow: inset 0px 7px 22px 3px #000000;
+    filter: brightness(2);
+    animation: buttonJump 5s linear infinite;
+
+}
+
+@keyframes buttonJump {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.2);
+
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+@media (min-width:720px) {
+    body {
+        padding: 8rem;
+        padding-top: 2rem;
+    }
+
+    main {
+        margin-bottom: 200px;
+    }
+
+
+    header {
+        /* margin: 0; */
+        /* border: 1px solid white; */
+    }
+
+    .intro h1 {
+        width: 70%;
+        margin: 300px auto;
+
+        /* border: 1px solid black; */
+    }
+
+    button {
+        position: fixed;
+        left: 90%;
+        bottom: 50px;
+    }
+}
+
+.info {
+
+    width: 40%;
+
+    margin: 10rem 60%;
+}
+
+.info p {
+    font-size: 2rem;
+    display: block;
+    -webkit-box-shadow: 0px 7px 22px -17px #FFFFFF;
+    box-shadow: 0px 7px 22px -17px #FFFFFF;
+    color: rgb(86, 85, 85);
+
+
+}
