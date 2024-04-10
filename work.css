@@ -101,7 +101,7 @@ header nav {
 
     width: 90%;
     height: 500px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     filter: brightness(2);
@@ -144,6 +144,7 @@ header nav {
 .description a img {
     width: 200px;
     border-radius: 2rem;
+    filter: grayscale(0.4);
 
 }
 
@@ -157,4 +158,5 @@ header nav {
 
 .description a:hover {
     transform: scale(1.1);
+    filter: brightness(1.5);
 }
