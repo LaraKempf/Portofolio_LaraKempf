@@ -20,7 +20,7 @@ main {
     height: 700px;
     /* height: 100vh; */
     /* width: 100vw; */
-    background-image: url(../Portofolio_LaraKempf/pictures/IMG_8204.jpeg);
+    background-image: url(./pictures/IMG_8204.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -69,7 +69,7 @@ header nav {
     }
 
     main {
-        margin-bottom: 200px;
+        /* margin-bottom: 200px; */
     }
 
 
@@ -77,4 +77,153 @@ header nav {
         /* margin: 0; */
         /* border: 1px solid white; */
     }
+}
+
+
+.riding {
+    position: relative;
+    height: 200px;
+    background-image: url(./pictures/death-valley-4250244_1280.jpg);
+    background-position: 0% 100%;
+    background-size: 100% 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    filter: sepia(0.5);
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    -webkit-box-shadow: 9px 10px 26px -6px rgba(189, 189, 189, 0.61), -25px 17px 39px 3px rgba(189, 189, 189, 0.47);
+    box-shadow: 9px 10px 26px -6px rgba(189, 189, 189, 0.61), -25px 17px 39px 3px rgba(189, 189, 189, 0.47);
+
+}
+
+.riding button {
+    margin: 20px 20px;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    font-weight: 800;
+
+}
+
+.riding-img {
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ride 13s linear infinite;
+    animation-play-state: paused;
+    z-index: 1;
+}
+
+.riding:hover .riding-img {
+
+    animation-play-state: running;
+}
+
+@keyframes ride {
+    0% {
+        transform: translateX(-700%)translateY(-10px);
+    }
+
+    25% {
+        transform: rotate(2deg)translateY(20px);
+    }
+
+    50% {
+        transform: translateX(0%)translateY(-20px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    99% {
+        transform: translateX(300%)translateY(-20px)scale(0.2);
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+
+h2 {
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    background: rgba(225, 222, 222, 0.248);
+    font-size: 2rem;
+}
+
+.paintings {
+    position: absolute;
+    top: 250px;
+    left: 140px;
+    width: auto;
+    height: 150px;
+    display: flex;
+    gap: 0.2rem;
+    /* flex-wrap: wrap; */
+
+
+}
+
+.paintings img {
+    width: 100px;
+    height: 100px;
+    filter: sepia(0.5);
+    opacity: 0.8;
+    transition: all ease-in-out 1s;
+
+}
+
+.paintings img:hover {
+    transform: scale(3);
+    z-index: 1;
+    opacity: 1;
+    filter: none;
+}
+
+@media (max-width:768px) {
+    .riding-img {
+        animation: none;
+    }
+
+    .riding button {
+        display: none;
+    }
+
+    .paintings {
+        flex-wrap: wrap;
+
+    }
+
+    .paintings img {
+        opacity: 1;
+        transition: none;
+
+    }
+
+
+
+    .paintings img:hover {
+        transform: none;
+    }
+}
+
+.favourites {
+    height: 150px;
+    width: 90%;
+
+    position: absolute;
+    top: 450px;
+    border: 1px solid red;
+}
+
+.favourites h2 {
+    position: absolute;
+    top: 0px;
+    left: 70px;
 }
