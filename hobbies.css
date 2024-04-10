@@ -152,7 +152,7 @@ header nav {
 h2 {
     position: absolute;
     top: 200px;
-    left: 140px;
+    left: 100px;
     background: rgba(225, 222, 222, 0.248);
     font-size: 2rem;
 }
@@ -160,7 +160,7 @@ h2 {
 .paintings {
     position: absolute;
     top: 250px;
-    left: 140px;
+    left: 100px;
     width: auto;
     height: 150px;
     display: flex;
@@ -211,19 +211,58 @@ h2 {
     .paintings img:hover {
         transform: none;
     }
+
+    .favorites img {
+        display: none;
+    }
+
+    .movies {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0 auto;
+        width: 400px;
+    }
+
+
 }
 
-.favourites {
-    height: 150px;
-    width: 90%;
+
+
+.movies {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+
+}
+
+.favorites {
+
 
     position: absolute;
     top: 450px;
-    border: 1px solid red;
+    left: 100px;
+
+    width: auto;
+    height: 100px;
+    display: flex;
+    gap: 0.2rem;
 }
 
-.favourites h2 {
-    position: absolute;
-    top: 0px;
-    left: 70px;
+.favorites img {
+    width: 100px;
+    height: 100px;
+    filter: sepia(0.5);
+    opacity: 0.8;
+    transition: all ease-in-out 1s;
+
+}
+
+.favorites img:hover {
+    transform: scale(3);
+    z-index: 1;
+    opacity: 1;
+    filter: none;
 }
