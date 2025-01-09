@@ -196,6 +196,8 @@ h2 {
     }
 
     .paintings {
+        position: absolute;
+        left: 40px;
         flex-wrap: wrap;
 
     }
